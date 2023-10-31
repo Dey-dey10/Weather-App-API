@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://img.freepik.com/free-vector/vector-world-globe-map-china-eastern-asia-australia-centered-map_8130-1954.jpg?size=626&ext=jpg&ga=GA1.1.1395150408.1668574708&semt=sph" size="16x6">
+    <title>WEATHER Updates:</title>
+    <link rel="stylesheet" href="weather.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+</head>
+<body>
+    <section class="page-container">
+        <div class="content">
+            <h1>weather forecast</h1>
+            <div class="input">
+                <i class="fa fa-magnifying-glass"></i>
+                <input type="search" placeholder="city weather update" id="cityinput">
+                <input type="submit" value="search" id="search">
+            </div>
+        </div>
+               
+       
+            <div class="display">
+                <div class="forecast">
+                    <img src="./image/cloudy-removebg-preview.png" alt="weather-status">
+                    <!--<img src="./image/rainy-removebg-preview.png" alt="">
+                    <img src="./image/sunny-removebg-preview.png" alt="">-->
+                    <h1 id="temp">27°C</h1>
+                    <h2 id="cityoutput">Manila</h2>
+                    <h2 id="desc">Broken Clouds</h2>
+                </div>
+                <div class="wrapper">
+                    <p id="humidity"><i class="fa fa-droplet"></i>84%</br>Humidity</p>
+                    <p id="wind"><i class="fa fa-light fa-wind"></i>9.33Km</br> Windspeed</p>
+                </div>
+            </div>
+
+    </section>
+
+    <script src="weather.js"></script>
+</body>
+</html>

@@ -1,0 +1,141 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+    text-transform: capitalize;
+}
+
+body{
+    height: 100vh;
+    background-image: url('https://img.freepik.com/free-vector/abstract-binary-code_1182-754.jpg?w=740&t=st=1698724760~exp=1698725360~hmac=d00d97cb2cf69ff83f50f6feb6ea370cf7d17ebc78a3cdc205100ab35a4003bf');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page-container{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: max-content(500px, 100%);
+    height: 80vh;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.7px);
+    -webkit-backdrop-filter: blur(6.7px);
+    overflow: hidden;
+}
+
+.content{
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 1000;
+    text-align: center;
+}
+
+h1{
+    font-size: max(4vw, 3rem);
+    font-weight: bolder;
+}
+
+h2{
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+#cityinput{
+    padding: 20px 4rem;
+    width: 60%;
+    resize: vertical;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    box-shadow: inset 2px 2px 8px #5858585e,
+    inset -2px -2px 12px #666565fa,
+    inset 4px 4px 6px #f1efeffa;
+}
+
+.input i{
+    font-size: 25px;
+    position: relative;
+    left: 3rem;
+    text-shadow: 4px 4px 12px #000,
+}
+
+#search{
+    position: relative;
+    right: 30px;
+    top: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    box-shadow: inset 2px 2px 4px #585858c7,
+    8px 6px 6px #2b2a2a;
+}
+
+#cityinput,
+#search{
+    font-size: max(2vw, 15px);
+}
+
+#search:hover{
+    top:5px;
+}
+
+.display{
+    position: absolute;
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 7rem;
+    font-weight: bold;
+    font-size: 25px;
+    z-index: 1;
+}
+
+.display .forecast{
+    text-align: center;
+}
+
+.display .forecast img{
+    width: 150px;
+    max-width: 250px;
+    margin-top: 2.5rem;
+}
+
+.display .forecast h1{
+    font-size: max(4vw, 45px);
+    font-weight: bolder;
+    color: #252a30;
+    padding: 2rem;
+}
+
+.display .forecast h1, img{
+    line-height: 10px;
+}
+
+.display .wrapper{
+    display: flex;
+    flex-direction: row;
+    gap: 10rem;
+    margin-top: 10px;
+}
+
+.display .wrapper p{
+    height: auto;
+    text-align: center;
+    font-weight: bolder;
+    font-size: max(2vw, 25px);
+}
+
